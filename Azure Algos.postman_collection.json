@@ -1,0 +1,22 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Azure Algos",
+		"_postman_id": "e8e4fb93-11e1-23c6-e6e5-dd2d8716e918",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "BubbleSort",
+			"request": {
+				"url": "",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
