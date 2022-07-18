@@ -3,3 +3,5 @@
 ################################################################################
 
 /.vs
+/AzureAlgos.Tests/bin/Debug/netcoreapp3.1
+/AzureAlgos.Tests/obj

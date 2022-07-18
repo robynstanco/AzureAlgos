@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31702.278
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32616.157
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureAlgos", "AzureAlgos\AzureAlgos.csproj", "{8245639C-BED9-403D-8B0E-068B80CD3C61}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureAlgos", "AzureAlgos\AzureAlgos.csproj", "{8245639C-BED9-403D-8B0E-068B80CD3C61}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureAlgos.Tests", "AzureAlgos.Tests\AzureAlgos.Tests.csproj", "{FDE957FF-852C-4BF2-B750-91C018C717B4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{8245639C-BED9-403D-8B0E-068B80CD3C61}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8245639C-BED9-403D-8B0E-068B80CD3C61}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8245639C-BED9-403D-8B0E-068B80CD3C61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDE957FF-852C-4BF2-B750-91C018C717B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDE957FF-852C-4BF2-B750-91C018C717B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDE957FF-852C-4BF2-B750-91C018C717B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDE957FF-852C-4BF2-B750-91C018C717B4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
