@@ -5,7 +5,7 @@ VisualStudioVersion = 17.2.32616.157
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureAlgos", "AzureAlgos\AzureAlgos.csproj", "{8245639C-BED9-403D-8B0E-068B80CD3C61}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureAlgos.Tests", "AzureAlgos.Tests\AzureAlgos.Tests.csproj", "{FDE957FF-852C-4BF2-B750-91C018C717B4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureAlgos.Tests", "AzureAlgos.Tests\AzureAlgos.Tests.csproj", "{FDE957FF-852C-4BF2-B750-91C018C717B4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
