@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureAlgos", "AzureAlgos\Az
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureAlgos.Tests", "AzureAlgos.Tests\AzureAlgos.Tests.csproj", "{FDE957FF-852C-4BF2-B750-91C018C717B4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureAlgos.Algorithms", "AzureAlgos.Algorithms\AzureAlgos.Algorithms.csproj", "{3751C89F-C362-4EF6-8202-713973278664}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{FDE957FF-852C-4BF2-B750-91C018C717B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FDE957FF-852C-4BF2-B750-91C018C717B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FDE957FF-852C-4BF2-B750-91C018C717B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3751C89F-C362-4EF6-8202-713973278664}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3751C89F-C362-4EF6-8202-713973278664}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3751C89F-C362-4EF6-8202-713973278664}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3751C89F-C362-4EF6-8202-713973278664}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

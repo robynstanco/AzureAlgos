@@ -1,3 +1,4 @@
+using AzureAlgos.Algorithms.Interfaces;
 using AzureAlgos.Models.Input;
 using AzureAlgos.Models.Output;
 using Microsoft.AspNetCore.Http;
@@ -6,16 +7,23 @@ using Microsoft.Azure.WebJobs;
 using Microsoft.Azure.WebJobs.Extensions.Http;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
+using System;
 using System.IO;
 using System.Threading.Tasks;
 
-namespace AzureAlgos.Sorting
+namespace AzureAlgos.SortingFunctions
 {
     /// <summary>
     /// The Bubble Sort function used to demonstrate easy sorting technique with long time complexity.
     /// </summary>
     public class BubbleSort
     {
+        private readonly IBubbleSort _bubbleSort;
+        public BubbleSort(IBubbleSort bubbleSort)
+        {
+            _bubbleSort = bubbleSort ?? throw new ArgumentNullException(nameof(bubbleSort));
+        }
+
         [FunctionName("BubbleSort")]
         public async Task<IActionResult> Run([HttpTrigger(AuthorizationLevel.Anonymous, "post", Route = "BubbleSort")] HttpRequest req, ILogger log)
         {
@@ -27,17 +35,7 @@ namespace AzureAlgos.Sorting
 
             var array = integerArrayRequest.Data;
 
-            for (int i = 0; i < array.Count; i++)
-            {
-                for (int j = i + 1; j < array.Count; j++)
-                {
-                    //Must swap
-                    if (array[i] > array[j])
-                    {
-                        (array[j], array[i]) = (array[i], array[j]);
-                    }
-                }
-            }
+            array = _bubbleSort.Sort(array);
 
             var result = new GenericResult
             {

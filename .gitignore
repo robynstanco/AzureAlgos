@@ -5,3 +5,5 @@
 /.vs
 /AzureAlgos.Tests/bin/Debug/netcoreapp3.1
 /AzureAlgos.Tests/obj
+/AzureAlgos.Algorithms/bin/Debug/netcoreapp3.1
+/AzureAlgos.Algorithms/obj

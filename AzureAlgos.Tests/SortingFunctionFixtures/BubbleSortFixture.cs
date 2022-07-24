@@ -1,19 +1,22 @@
-using AzureAlgos.Sorting;
+using AzureAlgos.Algorithms.Interfaces;
+using AzureAlgos.SortingFunctions;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
+using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AzureAlgos.Tests.SortingFixtures
+namespace AzureAlgos.Tests.SortingFunctionFixtures
 {
     [TestClass]
     public class BubbleSortFixture
     {
         private BubbleSort _bubbleSort;
 
+        private Mock<IBubbleSort> _bubbleSortMock;
         private Mock<HttpRequest> _httpRequestMock;
         private Mock<ILogger> _loggerMock;
 
@@ -25,13 +28,18 @@ namespace AzureAlgos.Tests.SortingFixtures
            
             _loggerMock = new Mock<ILogger>();
 
-            _bubbleSort = new BubbleSort();
+            _bubbleSortMock = new Mock<IBubbleSort>();
+
+            _bubbleSort = new BubbleSort(_bubbleSortMock.Object);
         }
 
         [TestMethod]
-        public async Task BubbleSort_SortsArrayCorrectly()
+        public async Task BubbleSort_IsSuccessful()
         {
             //Arrange
+            _bubbleSortMock.Setup(bsm => bsm.Sort(It.IsAny<List<int>>()))
+                .Returns(new List<int> { 1, 2, 3 });
+
             var bytes = Encoding.ASCII.GetBytes("{\"Data\": [3,1,2]}");
 
             var stream = new System.IO.MemoryStream(bytes);
